@@ -1,9 +1,18 @@
-import React from 'react'
+import React from "react";
+import Header from "../../components/Header";
+import SocialNetwork from "../../components/SocialNetwork";
+import Showcase from "../../components/Showcase";
 
-export default function Home() {
-    return (
-        <div>
-          <h1>Home</h1> 
-        </div>
-    )
-}
+const Home = () => {
+  return (
+    <section className="bg-1">
+      <div>
+        <Showcase />
+        <Header />
+        <SocialNetwork />
+      </div>
+    </section>
+  );
+};
+
+export default Home;
