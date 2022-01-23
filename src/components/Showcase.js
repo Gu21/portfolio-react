@@ -1,13 +1,18 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Showcase = () => {
-  return (
-    <section className="bg-1">
-      <div>
-
-      </div>
-    </section>
-  );
+    return (
+        <section>
+            <div>
+                <div className="logo">
+                    <NavLink to="/" >
+                        <li> Guillaume<span>BISSON</span></li>
+                    </NavLink>
+                </div>
+            </div>
+        </section>
+    );
 };
 
 export default Showcase;
