@@ -1,17 +1,18 @@
 import React from "react";
 import Navigation from "../../components/Navigation/Navigation";
 import SocialNetwork from "../../components/SocialNetwork/SocialNetwork";
-import Showcase from "../../components/Showcase/Showcase";
+
+
+
 
 const Home = () => {
   return (
-    <section>
-      <div>
+    
+      <header>
         <Navigation />
-        <Showcase />
         <SocialNetwork />
-      </div>
-    </section>
+      </header>
+    
   );
 };
 
