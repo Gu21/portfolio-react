@@ -1,15 +1,14 @@
 import React from "react";
-import Navigation from "../../components/Navigation";
-import SocialNetwork from "../../components/SocialNetwork";
-// import Showcase from "../../components/Showcase";
+import Navigation from "../../components/Navigation/Navigation";
+import SocialNetwork from "../../components/SocialNetwork/SocialNetwork";
+import Showcase from "../../components/Showcase/Showcase";
 
 const Home = () => {
   return (
     <section>
       <div>
-      {/* <Showcase /> */}
         <Navigation />
-        
+        <Showcase />
         <SocialNetwork />
       </div>
     </section>

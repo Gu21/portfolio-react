@@ -1,5 +1,5 @@
 @import './Variables.scss';
 @import './Background.scss';
 @import './Typography.scss';
-@import './templates/Navigation';
-@import './templates/SocialNetworks';
+@import '../components/Navigation/Navigation';
+@import '../components/SocialNetwork/SocialNetworks';
