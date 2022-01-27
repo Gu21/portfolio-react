@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
-import { NavData } from "../NavData/NavData";
-import Logo from "../Logo/Logo";
+import { NavData } from "../../components/NavData/NavData";
+import Logo from "../../components/Logo/Logo";
 import TitleHome from '../../components/TitleHome/TitleHome';
 import SocialNetwork from "../../components/SocialNetwork/SocialNetwork";
 

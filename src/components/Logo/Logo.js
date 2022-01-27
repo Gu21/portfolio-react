@@ -4,11 +4,11 @@ import logoGB from "../../assets/logo.png";
 
 const Logo = () => {
   return (
-    <div>
+    <>
         <NavLink to="/">
           <img className="logo-nav" src={logoGB} alt="logo" />
         </NavLink>
-      </div>
+      </>
   );
 };
 

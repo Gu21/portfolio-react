@@ -3,13 +3,18 @@
 
     position: absolute;
     left: 2rem;
-    width: 20%;
+    width: 11%;
     bottom: 2rem;
+
+    &:hover {
+
+        color: white;
+    }
 
 .content {
 
     display: flex;
-    // justify-content: space-around;
+    justify-content: space-around;
     list-style: none;
     list-style: none;
     font-size: 2rem;
@@ -17,13 +22,14 @@
     
 .hover {
 
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     color: $orange;
     // background: #111;
     border-radius: 50%;
     text-align: center;
-    line-height: 112px;
+    line-height: 67px;
+    border: 2px solid white;
   
 }
    
