@@ -1,13 +1,20 @@
 import React, { useState } from "react";
+/* ******************** ROUTER *************** */
 import { NavLink } from "react-router-dom";
+/* ******************** ICON *************** */
 import { FaBars } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
-import { NavData } from "../../components/NavData/NavData";
-import Logo from "../../components/Logo/Logo";
-import TitleHome from '../../components/TitleHome/TitleHome';
-import SocialNetwork from "../../components/SocialNetwork/SocialNetwork";
+/* ******************** DATA *************** */
+import { NavData } from "../../components/data/NavData/NavData";
+
+
+
+
+     /* ************ FUNCTIONAL COMPONENT ******** */
 
 const Navigation = () => {
+
+  /* ******************** USESTATE *************** */
   const [sideBar, setSideBar] = useState(false);
   const [icon1, setIcon1] = useState(true);
   const [icon2, setIcon2] = useState(false);
@@ -20,30 +27,45 @@ const Navigation = () => {
 
   return (
     <header>
-      <div className="bg-1">
-        <Logo />
-        <TitleHome title="web  developer" spanTitleDev="hello welcome to my portfolio" />
-        <NavLink to="#" onClick={showSidebar} className="toggle-button">
-          {icon1 ? <FaBars /> : null}
-        </NavLink>
+   
+        {/* ********************  MENU *************** */}
 
-        <nav className={`side-bar ${sideBar ? "side-bar active" : "side-bar"}`}>
-          <NavLink to="#" onClick={showSidebar} className="menu-bar">
-            {icon2 ? <AiOutlineClose /> : null}
+        {/* ******************** BUTTON NAV BURGER *************** */}
+
+        <nav>
+          <NavLink to="#" onClick={showSidebar} className="toggle-button">
+            {icon1 ? <FaBars /> : null}
           </NavLink>
 
-          <ul className="nav-menu-item">
-            {NavData.map((item, index) => {
-              return (
-                <li key={index} className={item.cName}>
-                  <NavLink to={item.path}>{item.title}</NavLink>
-                </li>
-              );
-            })}
-          </ul>
+             {/* *************** END ***** BUTTON NAV BURGER *************** */}
+
+          {/* ******************** BUTTON NAV CLOSE *************** */}
+
+          <div className={`side-bar ${sideBar ? "side-bar active" : "side-bar"}`}>
+            <NavLink to="#" onClick={showSidebar} className="menu-bar">
+              {icon2 ? <AiOutlineClose /> : null}
+            </NavLink>
+
+             {/* ***************** END *** BUTTON NAV CLOSE *************** */}
+
+            {/* ******************** BAR NAV *************** */}
+
+            <ul className="nav-menu-item">
+              {NavData.map((item, index) => {
+                return (
+                  <li key={index} className={item.cName}>
+                    <NavLink to={item.path}>{item.title}</NavLink>
+                  </li>
+                );
+              })}
+            </ul>
+
+            {/* **************** END *** BAR NAV *************** */}
+          </div>
         </nav>
-        <SocialNetwork />
-      </div>
+
+        {/* ***************** END ***  MENU *************** */}
+      {/* </div> */}
     </header>
   );
 };

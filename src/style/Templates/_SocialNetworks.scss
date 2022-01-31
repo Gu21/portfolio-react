@@ -1,0 +1,52 @@
+.social-network {
+  position: absolute;
+  left: 2rem;
+  width: 11%;
+  bottom: 2rem;
+
+  &:hover {
+    color: white;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    list-style: none;
+    font-size: 2em;
+
+    .hover {
+      width: 60px;
+      height: 60px;
+      color: $orange;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 67px;
+      border: 2px solid white;
+      position: relative;
+      z-index: 1;
+
+      &::before {
+        content: "";
+        border-radius: 50%;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0px;
+        top: 0px;
+        transform: scale(0);
+        transition: 0.4s ease-in-out;
+        z-index: -1;
+      }
+
+      &:hover::before {
+        transform: scale(1);
+        background: orange;
+      }
+
+      &:hover {
+        color: WHITE;
+      }
+    }
+  }
+}

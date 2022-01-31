@@ -1,13 +1,19 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import logoGB from "../../assets/logo.png";
+/* ******************** IMAGE LOGO *************** */
+import logoGB from "../../assets/images/logo.png";
+
+
+
 
 const Logo = () => {
   return (
+
+    /* ******************** FRAGMENTS *************** */
     <>
-        <NavLink to="/">
-          <img className="logo-nav" src={logoGB} alt="logo" />
-        </NavLink>
+          <div className="box-logo">
+          <img id="logo-nav" src={logoGB} alt="logo GB" />   
+          </div>
+           
       </>
   );
 };
