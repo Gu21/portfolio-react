@@ -1,7 +1,7 @@
 import React from "react";
 /* ******************** IMPORT COMPONENTS *************** */
 import Navigation from "../../containers/Navigation/Navigation";
-import TitleNameHome from "../../components/TitleNameHome";
+import TitleNameHome from "../../components/TitleNameHome/TitleNameHome";
 import SocialNetwork from '../../components/SocialNetwork/SocialNetwork';
 
 

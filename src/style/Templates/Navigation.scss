@@ -11,9 +11,9 @@
       height: 50px;
       top: 2rem;
       right: 2rem;
-      color:  $orange;
+      color:  var(--color-orange);
       font-size: 2em;
-      background-color: none;
+      // background-color: none;
       
       cursor: pointer;
     }
@@ -33,9 +33,9 @@
     position: absolute;
     width: 50px;
     height: 50px;
-    top: 53px;
-    left:  51px;
-    color: $icons;
+    top: 39px;
+    right: 23px;
+    color:  var(--color-icons);
     font-size: 2em;
     cursor: pointer;
 
@@ -43,7 +43,7 @@
   }
 
   .side-bar {
-    background: #fff;
+    background: var(--color-white);
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -70,14 +70,14 @@
         padding: 8px;
         font-size: 6em;
         position: relative;
-        color: black;
+        color: var(--color-black);
         text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff, 1px 1px 10px #141414;
         transition: .5s ease-in-out;
         letter-spacing: .15em;
 
         &:hover {
 
-          color: $orange;
+          color: var(--color-orange);
 
         }
 
@@ -86,11 +86,13 @@
         &::after {
 
           content: "";
-          border: 1px solid black;
-          display: block;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          border: 1px solid  var(--color-black);
           width: 100%;
           height: 0.2rem;
-          background: black;
+          background: var(--color-black);
           transform: scale(0, 1);
           transform-origin: 0% 100%;
           transition: transform .5s ease;
@@ -123,8 +125,8 @@
             text-align: center;
             padding: 8px;
             font-size: 2em;
-            background-color: $orange !important;
-            color: $icons !important;
+            background-color:  var(--color-orange) !important;
+            color:  var(--color-icons) !important;
 
          
            

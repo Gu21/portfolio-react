@@ -1,0 +1,19 @@
+.scroll-down {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 11%;
+  height: 36px;
+  position: absolute;
+  right: 0px;
+  bottom: 20px;
+}
+.scroll-down .scroll-explore {
+  color: var(--color-white);
+  text-align: center;
+  font-size: 1em;
+}
+.scroll-down .scroll-explore .scroll-arrow {
+  display: inline;
+  vertical-align: middle;
+}/*# sourceMappingURL=TitleNameHome.css.map */

@@ -1,0 +1,46 @@
+.social-network {
+  position: absolute;
+  left: 2rem;
+  width: 11%;
+  bottom: 2rem;
+}
+.social-network:hover {
+  color: var(--color-white);
+}
+.social-network .content {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  list-style: none;
+  font-size: 2em;
+}
+.social-network .content .hover {
+  width: 60px;
+  height: 60px;
+  color: var(--color-orange);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 67px;
+  border: 2px solid white;
+  position: relative;
+  z-index: 1;
+}
+.social-network .content .hover::before {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  transform: scale(0);
+  transition: 0.4s ease-in-out;
+  z-index: -1;
+}
+.social-network .content .hover:hover::before {
+  transform: scale(1);
+  background: var(--color-orange);
+}
+.social-network .content .hover:hover {
+  color: var(--color-white);
+}/*# sourceMappingURL=SocialNetworks.css.map */

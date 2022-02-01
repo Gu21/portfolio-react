@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 /* ******************** DATA *************** */
-import { NavData } from "../../components/data/NavData/NavData";
+import { NavData } from "../../data/NavData";
 
 
 

@@ -4,7 +4,7 @@
   height: 40px;
   position: absolute;
   top: 2rem;
-  color: white;
+  color: var(--color-white);
   left: 3rem;
   font-size: 1.31em;
   letter-spacing: .1em;
@@ -21,7 +21,7 @@
   
 
   .firstName-home {
-    color: $orange;
+    color: var(--color-orange);
   }
 
    

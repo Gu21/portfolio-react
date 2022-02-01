@@ -1,13 +1,15 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
 import { FaLongArrowAltRight } from "react-icons/fa";
-import Name from "./Name/Name";
-import TitleHome from "./TitleHome/TitleHome";
-import LogoGB from "./Logo/Logo";
+import Name from "../Name/Name";
+import TitleHome from "../TitleHome/TitleHome";
+import LogoGB from "../Logo/Logo";
 
 
 
 export default function TitleNameHome() {
+
+   /* ******************** STYLIZE SVG  *************** */
 
   let iconStyles = { color: "white", fontSize: "1em", verticalAlign: "middle" };
 

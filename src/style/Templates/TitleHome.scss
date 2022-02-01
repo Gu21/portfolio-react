@@ -5,7 +5,7 @@
   width: 48%;
 
   .tiltle-dev {
-    color: white;
+    color: var(--color-white);
     font-family: $serif;
     font-size: 9em;
     line-height: 1.16em;
@@ -16,14 +16,14 @@
     text-align: end;
 
     .span-dev-title {
-      color: $orange;
+      color: var(--color-orange);
       font-size: 1.31em;
       font-family: $sansSerif;
       text-transform: uppercase;
       letter-spacing: 0.2em;
 
       .span-subTitle-toMyPortfolio {
-        color: $orange;
+        color: var(--color-orange);
         font-size: 1.31em;
         font-family: $sansSerif;
         text-transform: lowercase;
