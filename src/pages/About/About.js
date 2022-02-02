@@ -8,16 +8,12 @@ const About = () => {
 
         <>
             <section className="bg-2">
-                <Navigation />
+                    <Navigation />
                 <div className="container">
                     <AboutSection />
                 </div>
-
             </section>
         </>
-
-
-
 
     )
 }
