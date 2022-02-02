@@ -1,7 +1,24 @@
+:root {
+
+--color-white: #fff;
+--color-black: #000;
+--color-orange: #fc9303;
+--color-icons: #878a8f;
+
+}
+
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  padding: 0 !important;
-  margin: 0 !important;
+  list-style-type: none;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html { 
+  scroll-behavior: unset;
 }
 
 // TYPOGRAPHY
@@ -14,11 +31,4 @@ $sansSerif: "Lato", "Arial", sans-serif;
 
 // VARIABLES COLOR
 
-:root {
 
---color-white: #fff;
---color-black: #000;
---color-orange: #fc9303;
---color-icons: #111;
-
-}

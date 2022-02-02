@@ -3,6 +3,7 @@ import React from "react";
 import Navigation from "../../containers/Navigation/Navigation";
 import TitleNameHome from "../../components/TitleNameHome/TitleNameHome";
 import SocialNetwork from '../../components/SocialNetwork/SocialNetwork';
+import LogoGB from '../../components/Logo/Logo';
 
 
 
@@ -12,16 +13,16 @@ import SocialNetwork from '../../components/SocialNetwork/SocialNetwork';
 const Home = () => {
   return (
 
-    /* ******************** HOME PAGE COMPONENTS *************** */
-
-    <>
+    
+    
       <div className="bg-1">
         <Navigation />
+        <LogoGB />
         <TitleNameHome />
         <SocialNetwork />
       </div>
 
-    </>
+  
 
   );
 };

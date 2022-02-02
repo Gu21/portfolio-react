@@ -3,7 +3,8 @@ import { NavLink } from "react-router-dom";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import Name from "../Name/Name";
 import TitleHome from "../TitleHome/TitleHome";
-import LogoGB from "../Logo/Logo";
+
+
 
 
 
@@ -18,12 +19,13 @@ export default function TitleNameHome() {
     <>
 
       {/* ******************** NAME and PROPS and CHILDREN / LOGO GB /  TITLE HOME and PROPS *************** */}
+     
       <NavLink to="/">
         <Name name="Guillaume" firstname="BISSON">
-          <LogoGB />
         </Name>
       </NavLink>
-      <LogoGB />
+     
+
       <TitleHome
         title="web developer"
         spanTitleDev="hello and welcome "

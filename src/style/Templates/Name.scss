@@ -1,27 +1,32 @@
 .name {
-  width: 15%;
+
+  width: 9%;
   text-align: center;
   height: 40px;
   position: absolute;
-  top: 2rem;
+  top: 3rem;
   color: var(--color-white);
-  left: 3rem;
+  left: 11rem;
   font-size: 1.31em;
   letter-spacing: .1em;
   text-transform: lowercase;
-  font-family: $sansSerif;
+  font-family: "Lato", "Arial", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
 
   
 
-.name-home {
+// .name-home {
 
-  width: 71%;
-  display: inline-block;
-}
+//   width: 60%;
+//   display: inline-block;
+// }
   
 
   .firstName-home {
-    color: var(--color-orange);
+    color: var(--color-icons);
   }
 
    
