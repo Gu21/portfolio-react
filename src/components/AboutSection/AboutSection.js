@@ -9,10 +9,10 @@ const AboutSection = () => {
     <>
 
       <div className="section-title-about">
-        <TitleAboutSectionLeft titleAbout='Quelques mots sur moi' paragraphAbout="Je m'appelle Guillaume BISSON passionné par l'univers du numérique et plus particulièrement par le web, j'ai
-              travaillé pendant 6 années dans  le secteur aéronautique pour un grand  groupe européen et aujourd'hui j'ai fait le choix de changer d'univers professionnel.
-              Je souhaite aujourd'hui concrétiser mon projet de reconversion et ainsi exercer une profession qui me passionne et qui attire chaque jour ma curiosité."
-          subParagraph="Dans mes temps libres j'aime voyager pour découvrir d'autres cultures et  faire du sport, comme la course à pied une discipline de patience et de persévérance."
+        <TitleAboutSectionLeft titleAbout='A few words about me' paragraphAbout="My name is Guillaume BISSON passionate about the digital world and more particularly about the web, I have
+              worked for 6 years in the aeronautics sector for a large European group and today I have made the choice to change my professional universe.
+              Today, I want to concretize my reconversion project and thus exercise a profession that fascinates me and that attracts my curiosity every day."
+          subParagraph="In my spare time I like to travel to discover other cultures and play sports, such as running, a discipline of patience and perseverance."
         />
         <div className="section-about-button">
           <buttonAboutSection btnLink="/" btnText="projects" />
