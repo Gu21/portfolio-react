@@ -7,7 +7,25 @@
     background-position: center;
     height: 100vh;
     width: 100%;
-}
+
+    .nav-menu-item {
+        list-style: none;
+      }
+  
+      .toggle-button {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 2rem;
+        right: 2rem;
+        color:  var(--color-orange);
+        font-size: 2em;
+        // background-color: none;
+        
+        cursor: pointer;
+      }
+    }
+
 
 .bg-2 {
     // background-image: linear-gradient(45deg,
@@ -21,4 +39,21 @@
     width: 100%;
     display: flex;
     align-items: center;
-}
+    
+    .nav-menu-item {
+        list-style: none;
+      }
+  
+      .toggle-button {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 2rem;
+        right: 2rem;
+        color:  var(--color-orange);
+        font-size: 2em;
+        // background-color: none;
+        
+        cursor: pointer;
+      }
+    }

@@ -3,12 +3,14 @@ import Navigation from "../../containers/Navigation/Navigation";
 import AboutSection from '../../components/AboutSection/AboutSection';
 
 
+
+
 const About = () => {
     return (
 
         <>
             <section className="bg-2">
-                    <Navigation />
+                  <Navigation />
                 <div className="container">
                     <AboutSection />
                 </div>
