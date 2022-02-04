@@ -1,17 +1,167 @@
 // MEDIA QUERY
 
+// //************* < 1440 ************************
 
 @include large-desktop {
+    .title-home {
+        top: 17rem;
+        left: 33rem;
+        width: 54%;
+    }
+
+    .tiltle-dev {
+        font-size: 7rem;
+    }
+
+    .name {
+        width: 13%;
+        top: 2rem;
+        left: 9rem;
+    }
+
+    .social-network {
+        width: 16%;
+    }
+
+    .scroll-down {
+        width: 15%;
+    }
 }
+
+//************* < 1200 ************************
+
+@include sm-desktop {
+
+    .title-home {
+        top: 17rem;
+        left: 19rem;
+        width: 54%;
+    }
+}
+
+//************* < 992 ************************
 
 @include desktop {
+    .title-home {
+        top: 18rem;
+        left: 16rem;
+        width: 62%;
+    }
+
+    .tiltle-dev {
+        font-size: 5rem;
+    }
+
+    .name {
+        top: 0rem;
+        left: 6rem;
+    }
+
+    .social-network {
+        width: 24%;
+    }
+
+    .scroll-down {
+        width: 21%;
+    }
 }
+
+// //************* < 768 ************************
 
 @include tablet {
+
+    .bg-1,
+    .bg-2 {
+        background-position: left;
+    }
+
+    .title-home {
+        top: 19rem;
+        left: -2rem;
+        width: 80%;
+        transform: rotate(-90deg);
+    }
+
+    .tiltle-dev {
+        font-size: 5.5rem;
+    }
+
+    .name {
+        top: 3rem;
+        left: 4rem;
+    }
+
+    .social-network {
+        width: 37%;
+    }
+
+    .scroll-down {
+        width: 35%;
+    }
 }
+
+//************* < 500 ************************
 
 @include mobile {
+
+    .bg-1,
+    .bg-2,
+    .bg-2 {
+        background-position: right;
+    }
+
+    .title-home {
+
+        top: 17rem;
+        left: 0.5rem;
+        width: 97%;
+        transform: rotate(0);
+        padding: 5px;
+    }
+
+    .tiltle-dev {
+        font-size: 3.9rem;
+    }
+
+    .name {
+
+        font-size: 1.5rem;
+
+    }
 }
 
+// //************* < 400 ************************
+
 @include mobile-xs {
+    .toggle-button.active {
+        right: 0rem;
+        top: 0rem;
+    }
+
+    .title-home {
+        top: 18rem;
+        left: 0rem;
+        width: 100%;
+        padding: 3px;
+    }
+
+    .tiltle-dev {
+        font-size: 3rem;
+    }
+
+    .name {
+        top: 3rem;
+        left: 1rem;
+        width: 44%;
+    }
+
+    .social-network {
+        width: 50%;
+        left: 5rem;
+        bottom: 5rem;
+    }
+
+    .scroll-down {
+        width: 45%;
+    }
 }

@@ -1,9 +1,13 @@
 @import './Variables.scss';
+@import '../style/mixins.scss';
 @import './_Background.scss';
+@import '../style/Templates/aboutSection.scss';
 @import '../style/Templates/Navigation';
 @import '../style/Templates/SocialNetworks';
 @import '../style/Templates/Logo';
 @import '../style/Templates/TitleHome';
 @import '../style/Templates/Name.scss';
 @import '../style/Templates/TitleNameHome.scss';
-@import '../style/Templates/aboutSection.scss';
+@import '../style/media-query';
+@import '../style/Templates/responsive.scss';
+

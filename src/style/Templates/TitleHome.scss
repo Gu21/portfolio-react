@@ -1,14 +1,26 @@
 .title-home {
+  // position: absolute;
+  // top: 21%;;
+  // left: 40%;
+  // width: 48%;
+  // position: absolute;
+  // top: 20em;
+  // left: -7em;
+  // width: 100%;
+ 
   position: absolute;
-  top: 21%;;
-  left: 40%;
-  width: 48%;
+  top: 20rem;
+  right: 19rem;
+  width: 46%;
+}
+
+
 
   .tiltle-dev {
     color: var(--color-white);
     font-family: $serif;
-    font-size: 9em;
-    line-height: 1.16em;
+    font-size: 7rem;
+    // line-height: 1.16rem;
     text-transform: uppercase;
   }
 
@@ -17,18 +29,18 @@
 
     .span-dev-title {
       color: var(--color-orange);
-      font-size: 1.31em;
+      font-size: 1.31rem;
       font-family: $sansSerif;
       text-transform: uppercase;
-      letter-spacing: 0.2em;
+      letter-spacing: 0.2rem;
 
       .span-subTitle-toMyPortfolio {
         color: var(--color-orange);
-        font-size: 1.31em;
+        font-size: 1.31rem;
         font-family: $sansSerif;
         text-transform: lowercase;
         font-style: italic;
       }
     }
   }
-}
+

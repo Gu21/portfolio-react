@@ -10,6 +10,7 @@ import { NavData } from "../../data/NavData";
 
 
 
+
      /* ************ FUNCTIONAL COMPONENT ******** */
 
 const Navigation = () => {
@@ -18,6 +19,7 @@ const Navigation = () => {
   const [sideBar, setSideBar] = useState(false);
   const [icon1, setIcon1] = useState(true);
   const [icon2, setIcon2] = useState(false);
+  
 
   const showSidebar = () => {
     setSideBar(!sideBar);
@@ -33,9 +35,14 @@ const Navigation = () => {
         {/* ******************** BUTTON NAV BURGER *************** */}
 
         <nav>
+
+          <div className={`toggle-side-bar ${sideBar ? "side-bar active" : "!side-bar"}`}>
           <NavLink to="#" onClick={showSidebar} className="toggle-button">
             {icon1 ? <FaBars /> : null}
+           
           </NavLink>
+          </div>
+        
 
              {/* *************** END ***** BUTTON NAV BURGER *************** */}
 

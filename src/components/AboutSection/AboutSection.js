@@ -1,6 +1,6 @@
 import React from 'react';
-import TitleAboutSectionLeft from '../TitleAboutSectionLeft.js';
-
+import TitleAboutSectionLeft from '../TitleAboutSectionLeft/TitleAboutSectionLeft';
+import Button from '../Button/Button';
 
 
 
@@ -16,8 +16,9 @@ const AboutSection = () => {
           subParagraph="In my spare time I like to travel to discover other cultures and play sports, such as running, a discipline of patience and perseverance."
         />
         <div className="section-about-button">
-          <buttonAboutSection btnLink="/" btnText="projects" />
-          <buttonAboutSection btnLink="/" btnText="CV" />
+          <Button btnLink="/" btnText="projects" />
+          <span>or</span>
+          <Button btnLink="/" btnText="CV" />
         </div>
       </div>
     </>

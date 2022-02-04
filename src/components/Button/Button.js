@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-const buttonAboutSection = ({ btnLink, btnText }) => {
+const Button = ({ btnLink, btnText }) => {
     return (
 
         <div className="button-about">
@@ -9,12 +9,10 @@ const buttonAboutSection = ({ btnLink, btnText }) => {
         <NavLink className="button" to={ btnLink}>
             {btnText}
             </NavLink>
-      
-        
         </div>
     )
 
 }
 
 
-export default buttonAboutSection
+export default Button;

@@ -8,52 +8,38 @@
     height: 100vh;
     width: 100%;
 
+//************* MIXINS **************
     .nav-menu-item {
-        list-style: none;
+        @include nav-menu;
       }
   
       .toggle-button {
-        position: absolute;
-        width: 50px;
-        height: 50px;
-        top: 2rem;
-        right: 2rem;
-        color:  var(--color-orange);
-        font-size: 2em;
-        // background-color: none;
-        
-        cursor: pointer;
+        @include button-nav;
       }
-    }
 
+    }
+      
 
 .bg-2 {
-    // background-image: linear-gradient(45deg,
-    // rgba(12, 12, 12, 0.65),
-    // rgba(10, 10, 10, 0.15)), url('/assets/background-about.jpg');
+ 
     background-image:  url('/assets/images/background-about.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100%;
+
+    //************* extention du selecteur bg-1 ************
+
+    @extend .bg-1;
     display: flex;
     align-items: center;
     
-    .nav-menu-item {
-        list-style: none;
-      }
-  
-      .toggle-button {
-        position: absolute;
-        width: 50px;
-        height: 50px;
-        top: 2rem;
-        right: 2rem;
-        color:  var(--color-orange);
-        font-size: 2em;
-        // background-color: none;
-        
-        cursor: pointer;
-      }
-    }
+.nav-menu-item {
+    @include nav-menu;
+  }
+
+  .toggle-button {
+    @include button-nav;
+  }
+
+}
+//********* END **** MIXINS **************
+    
+   
+    
