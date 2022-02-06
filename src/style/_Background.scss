@@ -23,6 +23,7 @@
 .bg-2 {
  
     background-image:  url('/assets/images/background-about.jpg');
+ 
 
     //************* extention du selecteur bg-1 ************
 
@@ -37,6 +38,9 @@
   .toggle-button {
     @include button-nav;
   }
+
+
+
 
 }
 //********* END **** MIXINS **************

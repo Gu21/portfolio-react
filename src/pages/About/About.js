@@ -1,6 +1,7 @@
 import React from 'react';
 import Navigation from "../../containers/Navigation/Navigation";
 import AboutSection from '../../components/AboutSection/AboutSection';
+import SkillsSectionAbout from '../../components/SkillsSectionAbout';
 
 
 
@@ -15,6 +16,13 @@ const About = () => {
                     <AboutSection />
                 </div>
             </section>
+            <section className="section-skills">
+                <div className="container-skills">
+                <SkillsSectionAbout />
+                </div>
+            </section>
+
+           
         </>
 
     )
