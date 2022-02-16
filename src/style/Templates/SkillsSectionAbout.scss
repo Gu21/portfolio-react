@@ -1,78 +1,113 @@
 .section-skills {
+  width: 100%;
+  height: 100vh;
+  background: #e7e7e7;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
 
-    width: 100%;
-    height: 100vh;
-    background: #e7e7e7;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    border: 1px solid #d0d2d4;
+    top: 7rem;
+    left: 16rem;
+    right: 0;
+    width: calc(100% - 32rem);
+  }
 
-.container-skills {
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    border: 1px solid #d0d2d4;
+    top: 50rem;
+    left: 16rem;
+    right: 0;
+    width: calc(100% - 32rem);
+}
 
+  .container-skills {
     width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 36vh;
+    height: 51vh;
 
     .skills {
+      letter-spacing: 0.2rem;
+      text-align: center;
+      font-family: "Lato";
+      font-weight: 700;
+      font-size: 2.5rem;
+      text-transform: uppercase;
 
-        letter-spacing: .2rem;
-        text-align: center;
-        font-family: 'Lato';
-        font-weight: 700;
-        font-size: 2.5rem;
-        text-transform: uppercase;
-      
+     
+
+      .title-skills-section-about {
+        font-size: 2.75rem;
+        line-height: 3.125rem;
+        padding-top: 11px;
+        padding-bottom: 9px;
+        font-family: "Lato";
+        font-weight: 800;
+        letter-spacing: -0.01rem;
+        color: #0f141e;
+      }
     }
+  }
 
- 
-
-}
-
-.skill-about {
+  .skill-about {
     display: flex;
     padding: 10px;
     align-items: center;
     text-align: center;
+    gap: 2rem;
 
     .tools {
+      display: flex;
+      flex-direction: column;
+      padding: 14px;
+      margin-right: 30px;
+      width: 24%;
+      height: 14rem;
+
+     
+
+      .icon-FaCode-front-end, .icon-FaDatabase-back-end, .icon-FaProjectDiagram, .icon-FaLaptop {
 
         display: flex;
-        flex-direction: column;
-        padding: 14px;
-        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        font-size: 2rem;
+      }
 
-        .sub-title-skill {
+      .sub-title-skill {
+        font-family: "Lato";
+        font-size: 1.35rem;
+        line-height: 3;
+        text-transform: uppercase;
+        margin-left: 20px;
+      }
 
-            font-family: 'Lato';
-            font-size: 1.35rem;
-            line-height: 3;
-            text-transform: uppercase;
+      .paragraph-tools {
+        color: #878a8f;
+        font-weight: 500;
+        letter-spacing: 0.01em;
+        padding-top: 2px;
+        padding-bottom: 3px;
+        text-align: left;
+        font-size: 1.2rem;
+        text-transform: lowercase;
+
+        &::first-letter {
+          text-transform: uppercase;
         }
-
-        .paragraph-tools {
-
-            color: #878a8f;
-            font-weight: 500;
-            letter-spacing: .01em;
-            padding-top: 2px;
-            padding-bottom: 3px;
-            text-align: left;
-            font-size: 1.2rem;
-            text-transform: lowercase;
-        }
+      }
     }
+  }
 }
-}
-
-
-
-
-
-
-
-
-
-
-

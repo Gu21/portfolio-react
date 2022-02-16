@@ -1,0 +1,134 @@
+
+.container-contact {
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient( 360deg, rgba(231, 231, 231, 1), rgba(231, 231,231, 0.1));
+
+    .form-contact-section {
+
+        display: flex;
+        justify-content: space-between;
+        width: 47%;
+        position: relative;
+
+
+        &::before {
+            content: "";
+            position: absolute;
+            border: 1px solid #878a8f;
+            height: 20rem;
+            top: 50%;
+            right: 50%;
+            transform: translate(-50%, -50%);
+            
+        }
+
+
+        
+
+        .contact-section-left {
+
+            width: 33%;
+            height: 21rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-left: 3rem;
+
+        }
+        .contact-info {
+
+            display: flex;
+            align-items: center;
+         
+
+            .contact-section-text {
+
+                margin-left: 1rem;
+            }
+
+            .icon-tel {
+
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                border: 1px solid #878a8f;
+                color: white;
+                background: #878a8f;  
+                position: relative;
+
+                &::before, svg {
+
+                    content: "";
+                    position: absolute;
+                    top: 9px;
+                    left: 9px;
+                    transform: translate(0px, 0px);
+                    color: white;
+                    font-size: 1.3rem;
+                }
+                
+            }
+        }
+    }
+
+    .form-contact-group {
+
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 0 0 73px;
+
+        form {
+
+            height: 23rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+
+            .form-group {
+
+                display: FLEX;
+                justify-content: SPACE-EVENLY;
+                width: 100%;
+                height: 11rem;
+                align-items: center;
+                gap: 3%;
+
+                label {
+
+                    width: 39%;
+                    padding: 3px;
+                }
+
+                input[type=text],textarea {
+
+                
+                    height: 43px;
+                    border: 1px solid #e7e8e9;
+                    border-width: 0 0 1px 0;
+                    width: 100%;
+                  
+                }
+
+               
+
+
+            }
+           
+        }
+
+
+
+    }
+
+}

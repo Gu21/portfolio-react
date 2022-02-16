@@ -1,27 +1,17 @@
- .scroll-down {
+.scroll-down {
+  position: absolute;
+  right: 46px;
+  bottom: 43px;
+  transform: rotate(-90deg);
 
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 11%;
-        height: 36px;
-        position: absolute;
-        right: 0px;
-        bottom: 20px;
-    
-        .scroll-explore {
-    
-            color: var(--color-white);
-            text-align: center;
-            font-size: 1rem;
+  .scroll-explore {
+    color: var(--color-white);
+    text-align: center;
+    font-size: 1rem;
 
-            .scroll-arrow {
-                display: inline;
-                vertical-align: middle;
-            }
-            
-    
-        }
+    .scroll-arrow {
+      display: inline;
+      vertical-align: middle;
     }
-
-
+  }
+}

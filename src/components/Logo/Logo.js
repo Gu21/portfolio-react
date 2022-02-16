@@ -11,7 +11,7 @@ const Logo = () => {
     /* ******************** FRAGMENTS *************** */
     <>
           <div className="box-logo">
-          <img id="logo-nav" srcset={logoGB} alt="logo GB" />   
+          <img id="logo-nav" src={logoGB} alt="logo GB" />   
           </div>
            
       </>

@@ -1,13 +1,15 @@
 import React from "react";
-import Skills from "./Skills";
+import Skills from "../Skills/Skills";
+
 
 const skillsSectionAbout = () => {
   return (
     <>
       <div className="skills">
-        <h3>skills</h3>
+        <h5>skills</h5>
+        <h1 className="title-skills-section-about">FULL-STACK, FRONT-END AND BACK-END DEVELOPER</h1>
       </div>
-
+     
       <div className="skill-about">
         <Skills
           subTitleSkill="front-end"
@@ -19,7 +21,7 @@ const skillsSectionAbout = () => {
           titleBackEnd="back-end"
           paragraphBackEnd="WEBSITE DEVELOPMENT VIA PHP/SYMFONY, CREATION AND MANAGEMENT OF DATABASES WITH MYSQL. OBJECT-ORIENTED PROGRAMMING."
           titleWebDesign="webDesign"
-          paragraphWebDesign="CRÉATION DE MAQUETTE XD ET HTML, AINSI QUE DE PROTOTYPES FONCTIONNELS. CONCEPTION CENTRÉE UTILISATEURS SELON LES RÈGLES D'UX LORS DE LA CRÉATION D'UNE INTERFACE UTILISATEUR ."
+          paragraphWebDesign="Creation of xd and html mockups, as well as functional prototypes. User-centric design according to ux rules when creating a user interface.."
         />
       </div>
     </>

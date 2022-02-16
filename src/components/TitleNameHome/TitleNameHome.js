@@ -1,8 +1,9 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
-import { FaLongArrowAltRight } from "react-icons/fa";
+// import { FaLongArrowAltRight } from "react-icons/fa";
 import Name from "../Name/Name";
 import TitleHome from "../TitleHome/TitleHome";
+import ScrollDown from '../ScrollDown/ScrollDown';
 
 
 
@@ -12,7 +13,7 @@ export default function TitleNameHome() {
 
    /* ******************** STYLIZE SVG  *************** */
 
-  let iconStyles = { color: "white", fontSize: "1em", verticalAlign: "middle" };
+  // let iconStyles = { color: "white", fontSize: "1em", verticalAlign: "middle" };
 
   return (
 
@@ -33,11 +34,12 @@ export default function TitleNameHome() {
       />
       {/* ******************** SCROLL DOWN  *************** */}
       <div className="scroll-down">
-        <p className="scroll-explore">scroll to explore</p>
+        <ScrollDown />
+        {/* <p className="scroll-explore">scroll to explore</p>
         <div className="scroll-arrow">
-          <FaLongArrowAltRight style={iconStyles} />
+          <FaLongArrowAltRight style={iconStyles} /> */}
         </div>
-      </div>
+     
 
     </>
 

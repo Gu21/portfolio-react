@@ -38,8 +38,10 @@ const Navigation = () => {
 
           <div className={`toggle-side-bar ${sideBar ? "side-bar active" : "!side-bar"}`}>
           <NavLink to="#" onClick={showSidebar} className="toggle-button">
-            {icon1 ? <FaBars /> : null}
-           
+          <span className="menu-toggle">Menu</span>
+          <div className="icon-tooggle-side-bar">
+          {icon1 ? <FaBars /> : null}
+          </div>
           </NavLink>
           </div>
         
@@ -50,7 +52,10 @@ const Navigation = () => {
 
           <div className={`side-bar ${sideBar ? "side-bar active" : "side-bar"}`}>
             <NavLink to="#" onClick={showSidebar} className="menu-bar">
+            <span className="menu-toggle">Close</span>
+            <div className="icon-tooggle-side-bar">
               {icon2 ? <AiOutlineClose /> : null}
+              </div>
             </NavLink>
 
              {/* ***************** END *** BUTTON NAV CLOSE *************** */}

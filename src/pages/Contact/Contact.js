@@ -1,10 +1,16 @@
-import React from 'react'
+import React from 'react';
+import Navigation from "../../containers/Navigation/Navigation";
+import ContactSection from '../../components/ContactSection/ContactSection';
 
 const Contact = () => {
     return (
-        <div>
-            contact
-        </div>
+        <>
+         <Navigation />
+        <section>
+        <ContactSection /> 
+        </section>
+            
+        </>
     )
 }
 export default Contact;
